@@ -19,32 +19,44 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inspirations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Principles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Movies & Documentaries</a>
-                    </li>
-                </ul>
+    <div class="nav-bar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inspiration">Inspirations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#principles">Principles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#movies">Movies & Documentaries</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+    </div>
+    <div class="nav-bar-mb">
+        <div class="top-bar-1">
         </div>
-    </nav>
+        <div class="top-bar-2">
+        </div>
+        <div class="top-bar-3">
+        </div>
+        <div class="top-bar-4">
+        </div>
+    </div>
 
     <!-- Introduction -->
-    <div class="container introduction">
+    <div class="container introduction" id="home">
         <div class="row">
             <div class="col-sm intro-head">
                 <h1>Embracing Simplicity: The Essence of Minimalistic Design</h1>
@@ -63,37 +75,43 @@
             <div class="col-sm-4 card-mov p-3">
                 <!-- Card 1 -->
                 <div class="card rounded-0 border-0 border-black" style="width: 18rem;">
-                    <img src="https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/07/64bafba56424a071613251.png" class="card-img-top rounded-0" alt="Card one thumbnail">
-                    <div class="card-body">
-                        <p class="card-text">Radio Motorola R7 <i class="bi bi-arrow-up-right"></i></p>
-                    </div>
+                    <a href="https://www.interwins.cl/nueva-radio-motorola-r7/" target="_blank">
+                        <img src="https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/07/64bafba56424a071613251.png" class="card-img-top rounded-0" alt="Card one thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Radio Motorola R7 <i class="bi bi-arrow-up-right"></i></p>
+                        </div>
+                    </a>
                 </div>
             </div>
     
             <div class="col-sm-4 card-mov p-3">
                 <!-- Card 2 -->
                 <div class="card rounded-0 border-0 border-black" style="width: 18rem;">
-                    <img src="https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/07/64b7bdd012aa3312926484.png" class="card-img-top rounded-0" alt="Card one thumbnail">
-                    <div class="card-body">
-                        <p class="card-text">Studio Kiln <i class="bi bi-arrow-up-right"></i></p>
-                    </div>
+                    <a href="https://www.studio-kiln.com/" target="_blank">
+                        <img src="https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/07/64b7bdd012aa3312926484.png" class="card-img-top rounded-0" alt="Card one thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Studio Kiln <i class="bi bi-arrow-up-right"></i></p>
+                        </div>
+                    </a>
                 </div>
             </div>
     
             <div class="col-sm-4 card-mov p-3">
                 <!-- Card 3 -->
                 <div class="card rounded-0 border-0 border-black" style="width: 18rem;">
-                    <img src="https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/07/64adde512a623662949782.png" class="card-img-top rounded-0" alt="Card one thumbnail">
-                    <div class="card-body">
-                        <p class="card-text">Joonas Sandel-Portfolio <i class="bi bi-arrow-up-right"></i></p>
-                    </div>
+                    <a href="https://joonassandell.com/" target="_blank">
+                        <img src="https://assets.awwwards.com/awards/media/cache/thumb_440_330/submissions/2023/07/64adde512a623662949782.png" class="card-img-top rounded-0" alt="Card one thumbnail">
+                        <div class="card-body">
+                            <p class="card-text">Joonas Sandel-Portfolio <i class="bi bi-arrow-up-right"></i></p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Principles -->
-    <div class="container principles">
+    <div class="container principles" id="principles">
         <div class="row">
             <h3>Principles</h3>
             <div class="col-sm principles-img-dt">
@@ -160,7 +178,7 @@
     </div>
 
     <!-- Movies & Documentaries -->
-    <div class="container movies p-4">
+    <div class="container movies p-4" id="movies">
         <h3>Movies & Documentaries</h3>
         <div class="mov-doc">
             <div class="items">
@@ -198,10 +216,10 @@
             <div class="col d-block mt-4">
                 <h5>Site Map</h5>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Inspirations</a></li>
-                    <li><a href="#">Principles</a></li>
-                    <li><a href="#">Movies & Documentaries</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#inspiration">Inspirations</a></li>
+                    <li><a href="#principles">Principles</a></li>
+                    <li><a href="#movies">Movies & Documentaries</a></li>
                 </ul>
             </div>
             <div class="col-sm-3 mt-4">

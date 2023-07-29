@@ -10,6 +10,9 @@
 ::-webkit-scrollbar-thumb {
     background-color: #888; /* Set the color of the scrollbar thumb/handle */
 }
+a{
+    text-decoration: none;
+}
 
 /* Navigation Bar */
 .navbar{
@@ -27,6 +30,37 @@
 .nav a{
     text-decoration: none;
     color: black;
+}
+@media (max-width: 768px){
+    .nav-bar{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .nav-bar-mb{
+        visibility: hidden;
+        display: none;
+    }
+}
+.top-bar-1{
+    height: 1.5vh;
+    background-color: black;
+}
+.top-bar-2{
+    margin-top: 0.2vh;
+    height: 1.2vh;
+    background-color: black;
+}
+.top-bar-3{
+    margin-top: 0.5vh;
+    height: 0.8vh;
+    background-color: black;
+}
+.top-bar-4{
+    margin-top: 0.8vh;
+    height: 0.2vh;
+    background-color: black;
 }
 
 /* Introduction */
@@ -68,6 +102,10 @@
         font-size: 2rem;
         text-align: center;
     }
+}
+.inspiration a{
+    text-decoration: none;
+    color: black;
 }
 
 /* Principles */
