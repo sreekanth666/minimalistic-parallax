@@ -1,0 +1,152 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+}
+::-webkit-scrollbar-track {
+    background-color: #c9c9c9; /* Set the background color of the scrollbar track */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb/handle */
+}
+
+/* Navigation Bar */
+.navbar{
+    min-height: 15vh;
+    overflow: auto;
+}
+.navbar-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav p{
+    margin: 0px 1%;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Introduction */
+.introduction{
+    height: 80vh;
+    overflow: hidden;
+    margin-top: 5vh;
+}
+.introduction img{
+    height: 100%;
+    width: auto;
+}
+.introduction h1{
+    font-size: 4rem;
+}
+@media (max-width: 768px){
+    .introduction h1{
+        font-size: 3rem;
+    }
+}
+.intro-head{
+    
+}
+
+/* Inspirations */
+.inspiration{
+    margin-top: 10vh;
+    background-color: #d9e4e4;
+}
+.card-mov{
+    display: flex;
+    justify-content:center ;
+}
+.inspiration h3{
+    font-size: 3rem;
+}
+@media (max-width: 768px){
+    .inspiration h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Principles */
+.principles{
+    margin-top: 10vh;
+}
+.principles h3{
+    font-size: 3rem;
+}
+.principles-img-dt{
+    height: 35vh;
+    overflow: hidden;
+}
+.principles-img-mb{
+    height: 20vh;
+    overflow: hidden;
+}
+@media (max-width: 768px){
+    .principles-img-dt{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (min-width: 768px){
+    .principles-img-mb{
+        visibility: hidden;
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .principles h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Movies & Documentaries */
+.movies{
+    margin-top: 10vh;
+    background-color: #d9e4e4;
+}
+.movies img{
+    max-width: 20rem;
+}
+.movies h3{
+    font-size: 3rem;
+}
+.mov-doc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.movies .items{
+    margin: 1rem;
+}
+@media (max-width: 768px){
+    .movies h3{
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Footer */
+.footer{
+    margin-top: 10vh;
+    background-color: black;
+    color: white;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer li{
+    list-style: none;
+}
+.footer ul{
+    padding-left: 0;
+}
+.copy{
+    font-size: x-small;
+    text-align: center;
+}
