@@ -7,6 +7,8 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./node_modules/locomotive-scroll/dist/locomotive-scroll.css">
+
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
@@ -56,10 +58,10 @@
     </div>
 
     <!-- Introduction -->
-    <div class="container introduction" id="home">
-        <div class="row">
+    <div class="container introduction data-scroll-container" id="home">
+        <div class="row data-scroll-section">
             <div class="col-sm intro-head">
-                <h1>Embracing Simplicity: The Essence of Minimalistic Design</h1>
+                <h1 data-scroll>Embracing Simplicity: The Essence of Minimalistic Design</h1>
             </div>
             <div class="col-sm">
                 <img src="https://images.unsplash.com/photo-1605106325682-3482f7c1c9c4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1563&q=80" alt="Minimal Image One" class="img-fluid thumbnail">
@@ -240,9 +242,20 @@
 <!-- Scripts -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+<script src="./node_modules/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
 <script>
-    var image = document.getElementsByClassName('thumbnail');
-    new simpleParallax(image, {scale: 1.8});
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scroll = new LocomotiveScroll({
+  el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+  direction: 'vertical' // Add this line to specify vertical scrolling
+});
+</script>
+<script>
+var image = document.getElementsByClassName('thumbnail');
+new simpleParallax(image, { scale: 1.8 });
 </script>
 
 </html>

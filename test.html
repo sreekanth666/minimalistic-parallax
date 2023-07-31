@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Text Effect</title>
+
+    <!-- CSS -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .parallax-container {
+            height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .parallax-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.5.1/dist/simpleParallax.min.js"></script>
+</head>
+<body>
+    <div class="parallax-container" data-scroll-container>
+        <!-- Parallax Background Image -->
+        <img src="https://images.unsplash.com/photo-1533597783223-7a86d3d1cbf1" alt="Parallax Background" class="thumbnail img-fluid" />
+
+        <!-- Parallax Text -->
+        <div class="parallax-text" data-scroll data-scroll-speed="-2">
+            Scroll to see the Parallax Effect
+        </div>
+    </div>
+
+    <!-- Other Content -->
+    <div style="height: 100vh; background-color: #f1f1f1; padding: 2rem;">
+        <h1>Lorem Ipsum</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis cursus eros. Sed auctor massa in dolor placerat, eget lacinia purus volutpat.
+            Donec ut urna sit amet turpis faucibus rhoncus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+            Maecenas a feugiat mi. Integer eu eros ut nisi rhoncus venenatis. Etiam gravida leo id dolor lobortis, quis rhoncus metus fermentum.
+        </p>
+    </div>
+
+    <!-- Initialize Locomotive Scroll -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true,
+                direction: 'vertical'
+            });
+        });
+
+        var image = document.getElementsByClassName('thumbnail');
+        new simpleParallax(image, { scale: 1.8 });
+    </script>
+</body>
+</html>
